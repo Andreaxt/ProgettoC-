@@ -26,7 +26,7 @@ namespace ProgettoEsame
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseMvcWithDefaultRoute();
+            app.UseMvcWithDefaultRoute();// questo fa puntare al home controller
 
             app.Run(async (context) =>
             {
