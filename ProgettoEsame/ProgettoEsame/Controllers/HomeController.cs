@@ -7,11 +7,15 @@ using ProgettoEsame.Models;
 
 namespace ProgettoEsame.Controllers
 {
+    [Route("Home")]
     public class HomeController : Controller
     {
+        [Route("Index")]
+        [Route("Index/{id}")]
+
         public IActionResult Index(int id)
         {
-            Contact contact = new Contact
+        Contact contact = new Contact
             {
                 id = id,
                 firstName = "Andrea",
