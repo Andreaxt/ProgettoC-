@@ -19,14 +19,20 @@ namespace ProgettoEsame
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app)
         {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
+         
 
-            app.UseMvcWithDefaultRoute();// questo fa puntare al home controller
+            //app.UseMvcWithDefaultRoute(); questo fa puntare al home controller
+
+            app.UseMvc(
+                 routes =>
+                 {
+                     routes
+                     .MapRoute("Default", "{controller=Home}/{action=Index}/{id?}")
+                     .MapRoute("Members","Members/{controller=MemberHome}/{action=Index}/{id?}");
+                 }
+           );
 
             app.Run(async (context) =>
             {

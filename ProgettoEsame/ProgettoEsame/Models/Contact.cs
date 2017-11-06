@@ -7,8 +7,9 @@ namespace ProgettoEsame.Models
 {
     public class Contact
     {
-        public String FirstName { get; set; }
-        public String LastName { get;  set; }
+        public int id { get; set; }
+        public String firstName { get; set; }
+        public String lastName { get;  set; }
 
     }
 }

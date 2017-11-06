@@ -9,12 +9,13 @@ namespace ProgettoEsame.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Index(int id)
         {
             Contact contact = new Contact
             {
-                FirstName = "Andrea",
-                LastName = "fire"
+                id = id,
+                firstName = "Andrea",
+                lastName = "fire"
             };
 
 
