@@ -1,0 +1,11 @@
+C:\Users\Andrea\Desktop\AppWeb\Progetto\ProgettoC-\ProgettoEsame\ProgettoEsame\bin\Debug\netcoreapp2.0\ProgettoEsame.deps.json
+C:\Users\Andrea\Desktop\AppWeb\Progetto\ProgettoC-\ProgettoEsame\ProgettoEsame\bin\Debug\netcoreapp2.0\ProgettoEsame.runtimeconfig.json
+C:\Users\Andrea\Desktop\AppWeb\Progetto\ProgettoC-\ProgettoEsame\ProgettoEsame\bin\Debug\netcoreapp2.0\ProgettoEsame.runtimeconfig.dev.json
+C:\Users\Andrea\Desktop\AppWeb\Progetto\ProgettoC-\ProgettoEsame\ProgettoEsame\bin\Debug\netcoreapp2.0\ProgettoEsame.dll
+C:\Users\Andrea\Desktop\AppWeb\Progetto\ProgettoC-\ProgettoEsame\ProgettoEsame\obj\Debug\netcoreapp2.0\ProgettoEsame.csprojResolveAssemblyReference.cache
+C:\Users\Andrea\Desktop\AppWeb\Progetto\ProgettoC-\ProgettoEsame\ProgettoEsame\obj\Debug\netcoreapp2.0\ProgettoEsame.csproj.CoreCompileInputs.cache
+C:\Users\Andrea\Desktop\AppWeb\Progetto\ProgettoC-\ProgettoEsame\ProgettoEsame\obj\Debug\netcoreapp2.0\ProgettoEsame.AssemblyInfoInputs.cache
+C:\Users\Andrea\Desktop\AppWeb\Progetto\ProgettoC-\ProgettoEsame\ProgettoEsame\obj\Debug\netcoreapp2.0\ProgettoEsame.AssemblyInfo.cs
+C:\Users\Andrea\Desktop\AppWeb\Progetto\ProgettoC-\ProgettoEsame\ProgettoEsame\bin\Debug\netcoreapp2.0\ProgettoEsame.pdb
+C:\Users\Andrea\Desktop\AppWeb\Progetto\ProgettoC-\ProgettoEsame\ProgettoEsame\obj\Debug\netcoreapp2.0\ProgettoEsame.dll
+C:\Users\Andrea\Desktop\AppWeb\Progetto\ProgettoC-\ProgettoEsame\ProgettoEsame\obj\Debug\netcoreapp2.0\ProgettoEsame.pdb
