@@ -26,12 +26,12 @@ namespace ProgettoEsame
             //app.UseMvcWithDefaultRoute(); questo fa puntare al home controller
 
             app.UseMvc(
-                 //routes =>
-                 //{
-                 //    routes
-                 //    .MapRoute("Default", "{controller=Home}/{action=Index}/{id?}")
-                 //    .MapRoute("Members","Members/{controller=MemberHome}/{action=Index}/{id?}");
-                 //}
+                 routes =>
+                 {
+                     routes
+                     .MapRoute("Default", "{controller=Home}/{action=Index}/{id?}")
+                     .MapRoute("Members", "Members/{controller=MemberHome}/{action=Index}/{id?}");
+                 }
            );
 
             app.Run(async (context) =>

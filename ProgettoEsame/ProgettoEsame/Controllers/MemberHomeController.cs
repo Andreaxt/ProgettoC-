@@ -10,14 +10,14 @@ namespace ProgettoEsame.Controllers
     public class MemberHomeController : Controller
     {
       
-        [Route("")]
-        [Route("[action]")]
+        //[Route("")]
+        //[Route("[action]")]
         public IActionResult Index()
         {
             return View();
         }
 
-        [Route("access")]
+        //[Route("access")]
         public IActionResult AccessGranted() {
             return View();
         }
