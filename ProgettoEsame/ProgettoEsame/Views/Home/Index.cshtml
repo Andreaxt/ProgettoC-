@@ -1,4 +1,4 @@
-﻿@model ProgettoEsame.Models.Contact
+﻿@model ProgettoEsame.ViewsModels.HomeIndexViewModel
 
 
 
@@ -7,7 +7,8 @@
     <title>Home</title>
 </head>
 <body>
-    Hi there @Model.firstName @Model.lastName !  Your id is @Model.id . 
+    Hi there @Model.Contact.FirstName @Model.Contact.LastName !  Your id is @Model.Contact.Id. <br /> <br />
+    You work for @Model.Customer.CustomerName!
 </body>
 </html>
 

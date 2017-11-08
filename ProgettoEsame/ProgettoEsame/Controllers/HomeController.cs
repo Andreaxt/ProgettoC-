@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using ProgettoEsame.Models;
+using ProgettoEsame.ViewsModels;
 
 
 namespace ProgettoEsame.Controllers
@@ -17,17 +18,28 @@ namespace ProgettoEsame.Controllers
         //[Route("Index/{id}")]
         public IActionResult Index(int id)
         {
+            Contact contact = new Contact
+            {
+                Id = 1,
+                FirstName = "Andrea",
+                LastName = "fire"
+            };
+
+            Customer customer = new Customer
+            {
+                Id = 2,
+                CustomerName = "The Company"
+            };
 
 
+            HomeIndexViewModel vm = new HomeIndexViewModel
+            {
+                Contact = contact,
+                Customer = customer
+        };
 
-            //Contact contact = new Contact
-            //    {
-            //        id = id,
-            //        firstName = "Andrea",
-            //        lastName = "fire"
-            //    }
-            //return View(contact);
-            return Content("hey steve");
+            return View(vm);
+            //return Content("hey steve");
         }
 
         public IActionResult DownloadData() {
