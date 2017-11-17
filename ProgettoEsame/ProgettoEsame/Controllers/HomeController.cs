@@ -12,34 +12,46 @@ namespace ProgettoEsame.Controllers
     //[Route("Home")]
     public class HomeController : Controller
     {
+        [HttpGet]
 
+        public IActionResult IndexWithForm() {
+            return View("IndexWithForm");
+        }
 
         //[Route("Index")]
         //[Route("Index/{id}")]
-        public IActionResult Index(int id)
+        //[FromQuery] per prendere dalla barra url
+
+        [HttpPost]
+
+        public IActionResult Index(Contact contact)
         {
-            Contact contact = new Contact
+            if (ModelState.IsValid)
             {
-                Id = 1,
-                FirstName = "Andrea",
-                LastName = "fire"
-            };
-
-            Customer customer = new Customer
-            {
-                Id = 2,
-                CustomerName = "The Company"
-            };
+                Customer customer = new Customer
+                {
+                    Id = 2,
+                    CustomerName = "The Company"
+                };
 
 
-            HomeIndexViewModel vm = new HomeIndexViewModel
-            {
-                Contact = contact,
-                Customer = customer
-        };
+                HomeIndexViewModel vm = new HomeIndexViewModel
+                {
+                    Contact = contact,
+                    Customer = customer
+                };
 
-            return View(vm);
-            //return Content("hey steve");
+                return View(vm);
+            }
+
+            return View("IndexWithForm");
+            //Contact contact = new Contact
+            //{
+            //    Id = 1,
+            //    FirstName = "Andrea",
+            //    LastName = "fire"
+            //};
+        
         }
 
         public IActionResult DownloadData() {

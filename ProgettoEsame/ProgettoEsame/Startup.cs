@@ -29,7 +29,8 @@ namespace ProgettoEsame
                  routes =>
                  {
                      routes
-                     .MapRoute("Default", "{controller=Home}/{action=Index}/{id?}")
+                     .MapRoute("Default", "{controller=Home}/{action=IndexWithForm}/{id?}")
+                    // .MapRoute("Default", "{controller=Home}/{action=Index}/{id?}")
                      .MapRoute("Members", "Members/{controller=MemberHome}/{action=Index}/{id?}");
                  }
            );
